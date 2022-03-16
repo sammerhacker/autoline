@@ -8,10 +8,10 @@ echo "amount => : ";
 $nam=trim(fgets($handle));
 echo "\n";
 function run1($mes,$nam,$x) {
-$header = "token1";
+$header = "";
 $message = $header. $mes;
 $LINE_API = "https://notify-api.line.me/api/notify";
-$LINE_TOKEN = "";
+$LINE_TOKEN = "token1";
 $queryData = array('message' => $message);
 $queryData = http_build_query($queryData,'','&');
 $headerOptions = array(
@@ -69,10 +69,10 @@ $res = json_decode($result);
 }
 
 function run5($mes,$nam,$x) {
-$header = "token5";
+$header = "";
 $message = $header. $mes;
 $LINE_API = "https://notify-api.line.me/api/notify";
-$LINE_TOKEN = "";
+$LINE_TOKEN = "token5";
 $queryData = array('message' => $message);
 $queryData = http_build_query($queryData,'','&');
 $headerOptions = array(
